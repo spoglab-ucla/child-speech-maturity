@@ -20,9 +20,11 @@ How to run training code:
 The CSVs contain number IDs in place of strings for the labels. Here is the mapping of ID to Label, which applies to all datasets in this folder: {'0': 'Canonical', '1': 'Non-Canonical', '2': 'Crying', '3': 'Laughing', '4': 'Junk'}
 
 ./MAT_TRAIN.csv - large training set taken from speech maturity dataset (maturity1 and maturity2)
+
 ./MAT_TEST.csv - large test set taken from speech maturity dataset (maturity1 and maturity2)
 
 ./balanced_bab.csv - smaller training set taken from BabbleCorpus and maturity2 (slight class balancing for Crying, Laughing, and Canonical classes)
+
 ./babblecor_test_ID.csv - smaller test set taken from BabbleCorpus
 
 ## Models
