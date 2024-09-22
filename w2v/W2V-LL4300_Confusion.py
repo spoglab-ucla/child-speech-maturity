@@ -79,7 +79,7 @@ def return_custom_set():
     test['Label'] = test['Label'].replace(label2id) 
 
     transformed_dataset = AudioArrays(csv_file=test,
-                                           root_dir='/u/home/m/madurya/project-spoglab')
+                                           root_dir='your/root/dir')
 
     return transformed_dataset
 
