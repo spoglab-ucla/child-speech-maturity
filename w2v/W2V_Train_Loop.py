@@ -150,7 +150,7 @@ def train_model(train_dataset, test_dataset):
     )
 
     # accelerate launch --config_file {/Users/your_username/Library/Caches/default_config.yaml} build_parallel_trainer.py
-    # /Users/maduryasuresh/.cache/huggingface/accelerate/default_config.yaml
+    # /Users/yourusername/.cache/huggingface/accelerate/default_config.yaml
     # accelerator = Accelerator()
     accelerator = Accelerator()
     trainer = accelerator.prepare(Trainer(
