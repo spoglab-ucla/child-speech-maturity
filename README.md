@@ -19,10 +19,10 @@ This folder contains the code to create and test the transformers models.
 - Test UAR & Confusion Matrix (W2V Base): W2V_Confusion.py
 
 - Train & Dev UAR Loop (W2V-LL4300): W2V-LL4300_Train_Loop.py
-(uses ./fairseq_wav2vec.py in code)
+(uses fairseq_wav2vec.py in code which is in this folder and was sourced from this [repository](https://huggingface.co/lijialudew/wav2vec_LittleBeats_LENA))
 
 - Test UAR & Confusion Matrix (W2V-LL4300): W2V-LL4300_Confusion.py
-(uses ./checkpoint_best.pt in code)
+(uses ./checkpoint_best.pt which can be found in this [repository](https://huggingface.co/lijialudew/wav2vec_LittleBeats_LENA) as LL4300/checkpoint_best.pt)
 
 ### **confidence**
 This folder contains the code for adding the confidence levels to the existing datasets and calculating additional statistics from them.
