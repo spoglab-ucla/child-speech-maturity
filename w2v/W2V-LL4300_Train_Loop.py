@@ -101,7 +101,7 @@ def return_custom_train():
     train['Label'] = train['Label'].replace(label2id) # this is compatible with both if Label column has numbers or word labelss
 
     transformed_dataset = AudioArrays(csv_file=train,
-                                           root_dir='/u/home/m/madurya/project-spoglab')
+                                           root_dir='your/root/dir')
 
 
     return DataLoader(transformed_dataset, batch_size=32, shuffle=True)
@@ -112,7 +112,7 @@ def return_custom_test():
     dev['Label'] = dev['Label'].replace(label2id) 
 
     transformed_dataset = AudioArrays(csv_file=dev,
-                                           root_dir='/u/home/m/madurya/project-spoglab/BabbleCor_clips')
+                                           root_dir='your/root/dir')
 
     return DataLoader(transformed_dataset, batch_size=32, shuffle=True)
 
