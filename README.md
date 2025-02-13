@@ -39,7 +39,7 @@ Data set format for calculating UAR over all samples and for each environment, R
 
 - logits: the outputted logits from the models
     
-    - probabilities: using the logits, the probability that the model assigns to each label for each clip
+- probabilities: using the logits, the probability that the model assigns to each label for each clip
 
 Calculating the Fleiss' and Cohens' Kappas:
 - caculate_kappas.py
