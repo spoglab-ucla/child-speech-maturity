@@ -21,8 +21,10 @@ This folder contains the code to create and test the transformers models for W2V
 ### **confidence**
 This folder contains the code for calculating additional statistics from both the human annotator data and model outputs.
 
-Data set format for calculating UAR over all samples and for each environment, ROC/AUC cuves, confusion matrices, Cohen's kappa, Fleiss' kappa: 
+Data set format for calculating UAR over all samples and for each environment, ROC/AUC cuves, confusion matrices, Cohen's kappa, Fleiss' kappa:
+
 [audio_file,label,child_id,child_age,corpus_id,annotators,model_predicted_label,environment,logits,probabilities]
+
     - audio_file: unique audio file ID
     - label: true label (canonical, non-canonical, laugh, cry, or junk)
     - child_id: unique child ID for the child associated with the sample
@@ -34,5 +36,6 @@ Data set format for calculating UAR over all samples and for each environment, R
 
 Calculating the Fleiss' and Cohens' Kappas:
 - caculate_kappas.py
+
 Calculating ROC/AUC curves, confusion matrices, and UARs
 - calculate_cm_uar_rocs.py
