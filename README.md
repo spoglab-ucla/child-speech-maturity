@@ -26,12 +26,19 @@ Data set format for calculating UAR over all samples and for each environment, R
 [audio_file,label,child_id,child_age,corpus_id,annotators,model_predicted_label,environment,logits,probabilities]
 
     - audio_file: unique audio file ID
+    
     - label: true label (canonical, non-canonical, laugh, cry, or junk)
+    
     - child_id: unique child ID for the child associated with the sample
+    
     - corpus_id: unique corpus ID for the corpus associated with the sample
-    - annotators: an array of what each annotator labeled the clip as. Number of annotators varies between samples
+    
+    - annotators: an array of what each annotator labeled the clip as. Number of annotators varies between samples.
+    
     - model_predicted_label: the label that the model predicts
+    
     - logits: the outputted logits from the models
+    
     - probabilities: using the logits, the probability that the model assigns to each label for each clip
 
 Calculating the Fleiss' and Cohens' Kappas:
